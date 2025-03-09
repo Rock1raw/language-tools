@@ -133,19 +133,19 @@ importers:
     devDependencies:
       '@rollup/plugin-commonjs':
         specifier: ^24.0.0
-        version: 24.1.0(rollup@3.7.5)
+        version: 24.1.0(rollup@3.29.5)
       '@rollup/plugin-json':
         specifier: ^6.0.0
-        version: 6.0.0(rollup@3.7.5)
+        version: 6.0.0(rollup@3.29.5)
       '@rollup/plugin-node-resolve':
         specifier: ^15.0.0
-        version: 15.0.2(rollup@3.7.5)
+        version: 15.0.2(rollup@3.29.5)
       '@rollup/plugin-replace':
         specifier: 5.0.2
-        version: 5.0.2(rollup@3.7.5)
+        version: 5.0.2(rollup@3.29.5)
       '@rollup/plugin-typescript':
         specifier: ^10.0.0
-        version: 10.0.1(rollup@3.7.5)(tslib@2.5.2)(typescript@5.6.3)
+        version: 10.0.1(rollup@3.29.5)(tslib@2.5.2)(typescript@5.6.3)
       '@types/sade':
         specifier: ^1.7.2
         version: 1.7.4
@@ -153,11 +153,11 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
       rollup:
-        specifier: 3.7.5
-        version: 3.7.5
+        specifier: 3.29.5
+        version: 3.29.5
       rollup-plugin-cleanup:
         specifier: ^3.2.0
-        version: 3.2.1(rollup@3.7.5)
+        version: 3.2.1(rollup@3.29.5)
       rollup-plugin-copy:
         specifier: ^3.4.0
         version: 3.4.0
@@ -240,16 +240,16 @@ importers:
         version: 0.3.25
       '@rollup/plugin-commonjs':
         specifier: ^24.0.0
-        version: 24.1.0(rollup@3.7.5)
+        version: 24.1.0(rollup@3.29.5)
       '@rollup/plugin-json':
         specifier: ^6.0.0
-        version: 6.0.0(rollup@3.7.5)
+        version: 6.0.0(rollup@3.29.5)
       '@rollup/plugin-node-resolve':
         specifier: ^15.0.0
-        version: 15.0.2(rollup@3.7.5)
+        version: 15.0.2(rollup@3.29.5)
       '@rollup/plugin-typescript':
         specifier: ^10.0.0
-        version: 10.0.1(rollup@3.7.5)(tslib@2.5.2)(typescript@5.6.3)
+        version: 10.0.1(rollup@3.29.5)(tslib@2.5.2)(typescript@5.6.3)
       '@types/estree':
         specifier: ^0.0.42
         version: 0.0.42
@@ -281,8 +281,8 @@ importers:
         specifier: ^2.0.2
         version: 2.0.3
       rollup:
-        specifier: 3.7.5
-        version: 3.7.5
+        specifier: 3.29.5
+        version: 3.29.5
       rollup-plugin-delete:
         specifier: ^2.0.0
         version: 2.0.0
@@ -445,6 +445,7 @@ packages:
 
   '@sinonjs/fake-timers@10.2.0':
     resolution: {integrity: sha512-OPwQlEdg40HAj5KNF8WW6q2KG4Z+cBCZb3m4ninfTZKaBmbIJodviQsDBoYMPHkOyJJMHnOJo5j2+LKDOhOACg==}
+    deprecated: Use version 10.1.0. Version 10.2.0 has potential breaking issues
 
   '@sinonjs/fake-timers@7.1.2':
     resolution: {integrity: sha512-iQADsW4LBMISqZ6Ci1dupJL9pprqwcVFTcOsEmQOEhW+KLCVn/Y4Jrvg2k19fIHCp+iFprriYPTdRcQR8NbUPg==}
@@ -812,13 +813,16 @@ packages:
 
   glob@7.2.0:
     resolution: {integrity: sha512-lmLf6gtyrPq8tTjSmrO94wBeQbFR3HbLHbuyD69wuyQkImp2hWqMGB47OX65FBkPffO641IP9jWa1z4ivqG26Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   glob@8.1.0:
     resolution: {integrity: sha512-r8hpEjiQEYlF2QU0df3dS+nxxSIreXQS1qRhMJM0Q5NDdR386C7jb7Hwwod8Fgiuex+k0GFjgft18yvxm5XoCQ==}
     engines: {node: '>=12'}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   globalyzer@0.1.0:
     resolution: {integrity: sha512-40oNTM9UfG6aBmuKxk/giHn5nQ8RVz/SS4Ir6zgzOv9/qC3kKZ9v4etGTcJbEl/NyVQH7FGU7d+X1egr57Md2Q==}
@@ -867,6 +871,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
@@ -963,6 +968,7 @@ packages:
 
   lodash.get@4.4.2:
     resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
+    deprecated: This package is deprecated. Use the optional chaining (?.) operator instead.
 
   lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
@@ -1139,6 +1145,7 @@ packages:
 
   rimraf@3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   rollup-plugin-cleanup@3.2.1:
@@ -1158,8 +1165,8 @@ packages:
   rollup-pluginutils@2.8.2:
     resolution: {integrity: sha512-EEp9NhnUkwY8aif6bxgovPHMoMoNr2FulJziTndpt5H9RdwC47GSGuII9XxpSdzVGM0GWrNPHV6ie1LTNJPaLQ==}
 
-  rollup@3.7.5:
-    resolution: {integrity: sha512-z0ZbqHBtS/et2EEUKMrAl2CoSdwN7ZPzL17UMiKN9RjjqHShTlv7F9J6ZJZJNREYjBh3TvBrdfjkFDIXFNeuiQ==}
+  rollup@3.29.5:
+    resolution: {integrity: sha512-GVsDdsbJzzy4S/v3dqWPJ7EfvZJfCHiDqe80IyrF59LYuP+e6U1LJoUqeuqRbwAWoMNoXivMNeNAOf5E22VA1w==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
 
@@ -1191,6 +1198,7 @@ packages:
 
   sinon@11.1.2:
     resolution: {integrity: sha512-59237HChms4kg7/sXhiRcUzdSkKuydDeTiamT/jesUVHshBgL8XAmhgFo0GfK6RruMDM/iRSij1EybmMog9cJw==}
+    deprecated: 16.1.1
 
   skip-regex@1.0.2:
     resolution: {integrity: sha512-pEjMUbwJ5Pl/6Vn6FsamXHXItJXSRftcibixDmNCWbWhic0hzHrwkMZo0IZ7fMRH9KxcWDFSkzhccB4285PutA==}
@@ -1461,57 +1469,57 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
 
-  '@rollup/plugin-commonjs@24.1.0(rollup@3.7.5)':
+  '@rollup/plugin-commonjs@24.1.0(rollup@3.29.5)':
     dependencies:
-      '@rollup/pluginutils': 5.0.2(rollup@3.7.5)
+      '@rollup/pluginutils': 5.0.2(rollup@3.29.5)
       commondir: 1.0.1
       estree-walker: 2.0.2
       glob: 8.1.0
       is-reference: 1.2.1
       magic-string: 0.27.0
     optionalDependencies:
-      rollup: 3.7.5
+      rollup: 3.29.5
 
-  '@rollup/plugin-json@6.0.0(rollup@3.7.5)':
+  '@rollup/plugin-json@6.0.0(rollup@3.29.5)':
     dependencies:
-      '@rollup/pluginutils': 5.0.2(rollup@3.7.5)
+      '@rollup/pluginutils': 5.0.2(rollup@3.29.5)
     optionalDependencies:
-      rollup: 3.7.5
+      rollup: 3.29.5
 
-  '@rollup/plugin-node-resolve@15.0.2(rollup@3.7.5)':
+  '@rollup/plugin-node-resolve@15.0.2(rollup@3.29.5)':
     dependencies:
-      '@rollup/pluginutils': 5.0.2(rollup@3.7.5)
+      '@rollup/pluginutils': 5.0.2(rollup@3.29.5)
       '@types/resolve': 1.20.2
       deepmerge: 4.3.1
       is-builtin-module: 3.2.1
       is-module: 1.0.0
       resolve: 1.22.2
     optionalDependencies:
-      rollup: 3.7.5
+      rollup: 3.29.5
 
-  '@rollup/plugin-replace@5.0.2(rollup@3.7.5)':
+  '@rollup/plugin-replace@5.0.2(rollup@3.29.5)':
     dependencies:
-      '@rollup/pluginutils': 5.0.2(rollup@3.7.5)
+      '@rollup/pluginutils': 5.0.2(rollup@3.29.5)
       magic-string: 0.27.0
     optionalDependencies:
-      rollup: 3.7.5
+      rollup: 3.29.5
 
-  '@rollup/plugin-typescript@10.0.1(rollup@3.7.5)(tslib@2.5.2)(typescript@5.6.3)':
+  '@rollup/plugin-typescript@10.0.1(rollup@3.29.5)(tslib@2.5.2)(typescript@5.6.3)':
     dependencies:
-      '@rollup/pluginutils': 5.0.2(rollup@3.7.5)
+      '@rollup/pluginutils': 5.0.2(rollup@3.29.5)
       resolve: 1.22.2
       typescript: 5.6.3
     optionalDependencies:
-      rollup: 3.7.5
+      rollup: 3.29.5
       tslib: 2.5.2
 
-  '@rollup/pluginutils@5.0.2(rollup@3.7.5)':
+  '@rollup/pluginutils@5.0.2(rollup@3.29.5)':
     dependencies:
       '@types/estree': 1.0.1
       estree-walker: 2.0.2
       picomatch: 2.3.1
     optionalDependencies:
-      rollup: 3.7.5
+      rollup: 3.29.5
 
   '@sinonjs/commons@1.8.6':
     dependencies:
@@ -2201,10 +2209,10 @@ snapshots:
     dependencies:
       glob: 7.2.3
 
-  rollup-plugin-cleanup@3.2.1(rollup@3.7.5):
+  rollup-plugin-cleanup@3.2.1(rollup@3.29.5):
     dependencies:
       js-cleanup: 1.2.0
-      rollup: 3.7.5
+      rollup: 3.29.5
       rollup-pluginutils: 2.8.2
 
   rollup-plugin-copy@3.4.0:
@@ -2223,7 +2231,7 @@ snapshots:
     dependencies:
       estree-walker: 0.6.1
 
-  rollup@3.7.5:
+  rollup@3.29.5:
     optionalDependencies:
       fsevents: 2.3.3
 
